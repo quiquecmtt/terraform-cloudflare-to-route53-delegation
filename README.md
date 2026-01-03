@@ -1,3 +1,43 @@
+# Cloudflare to Route53 Delegation
+
+Terraform module to delegate a subdomain from Cloudflare to AWS Route53.
+
+## Overview
+
+This module creates the necessary DNS records to delegate a subdomain managed in Cloudflare to an AWS Route53 hosted zone. It:
+
+1. Creates a new Route53 hosted zone for the subdomain
+2. Retrieves the NS records from Route53
+3. Creates NS records in Cloudflare pointing to the Route53 nameservers
+
+## Usage
+
+```hcl
+module "delegation" {
+  source = "github.com/quiquecmtt/terraform-cloudflare-to-route53-delegation"
+
+  cloudflare_zone = "example.com"
+  route53_zone    = "aws.example.com"
+}
+```
+
+## Prerequisites
+
+- Cloudflare API token with Zone:Read and DNS:Edit permissions
+- AWS credentials with Route53 permissions
+
+## Provider Configuration
+
+```hcl
+provider "cloudflare" {
+  api_token = var.cloudflare_api_token
+}
+
+provider "aws" {
+  region = "us-east-1"
+}
+```
+
 <!-- BEGIN_TF_DOCS -->
 ## Requirements
 
