@@ -44,15 +44,15 @@ provider "aws" {
 | Name | Version |
 |------|---------|
 | <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.10.0 |
-| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 6.25.0 |
-| <a name="requirement_cloudflare"></a> [cloudflare](#requirement\_cloudflare) | 5.14.0 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | 6.28.0 |
+| <a name="requirement_cloudflare"></a> [cloudflare](#requirement\_cloudflare) | 5.15.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| <a name="provider_aws"></a> [aws](#provider\_aws) | 6.25.0 |
-| <a name="provider_cloudflare"></a> [cloudflare](#provider\_cloudflare) | 5.14.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | 6.28.0 |
+| <a name="provider_cloudflare"></a> [cloudflare](#provider\_cloudflare) | 5.15.0 |
 
 ## Modules
 
@@ -62,9 +62,9 @@ No modules.
 
 | Name | Type |
 |------|------|
-| [aws_route53_zone.delegated_zone](https://registry.terraform.io/providers/hashicorp/aws/6.25.0/docs/resources/route53_zone) | resource |
-| [cloudflare_dns_record.delegation_records](https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record) | resource |
-| [cloudflare_zone.zone_info](https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone) | data source |
+| [aws_route53_zone.delegated_zone](https://registry.terraform.io/providers/hashicorp/aws/6.28.0/docs/resources/route53_zone) | resource |
+| [cloudflare_dns_record.delegation_records](https://registry.terraform.io/providers/cloudflare/cloudflare/5.15.0/docs/resources/dns_record) | resource |
+| [cloudflare_zone.zone_info](https://registry.terraform.io/providers/cloudflare/cloudflare/5.15.0/docs/data-sources/zone) | data source |
 
 ## Inputs
 
