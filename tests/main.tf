@@ -13,7 +13,7 @@ terraform {
 }
 
 provider "cloudflare" {
-  api_token = "test-token"
+  api_token = "test-token-OSnWeIC97OE2fyOHzvwkO4BXBlqPXboXUA1h93I"
 }
 
 provider "aws" {
